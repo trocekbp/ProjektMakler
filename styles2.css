@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Cała strona */
+  body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Courier New', monospace;
+    font-size: larger;
+    margin: 0;
+  }
+  
+  /* Górna belka */
+  header {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: lawngreen;
+    width: 75%;
+    float: right;
+    border: 7px ridge limegreen;
+  }
+  
+  /* Nawigacja */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    background: black;
+    padding: 20px;
+    color: whitesmoke;
+    border: 8px double limegreen;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 2;
+  }
+  
+  /* Treść artykułu */
+  article {
+    float: right;
+    padding: 20px;
+    width: 75%;
+    min-height: calc(100vh - 148px); /* Dostosuj wysokość artykułu */
+  }
+  
+  /* Tabele */
+  table tr td:nth-child(2n+1) {
+    color: lime;
+    font-family: "Courier New", monospace;
+    font-size: large;
+    font-weight: 500;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid limegreen;
+    text-align: center;
+    padding: 8px;
+  }
+  table {
+    width: 100%;
+  }
+  th {
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+  }
+  
+  /* Przyciski */
+  a.d {
+    border: 2px solid limegreen;
+    border-radius: 20%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: limegreen;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  a.d:hover {
+    background-color: limegreen;
+    color: white;
+  }
+  
+  /* Przyciski menu */
+  a.menu,
+  a.kat {
+    background-color: lime;
+    color: black;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s, border-color 0.3s;
+    font-family: 'Courier New', monospace;
+    border: 2px solid black;
+  }
+  a.menu:hover,
+  a.kat:hover,
+  a.menu:active,
+  a.kat:active {
+    background-color: black;
+    color: lime;
+    animation: matrixEffect 0.5s forwards;
+    border-color: lime;
+  }
+  a.menu:not(:hover):not(:active),
+  a.kat:not(:hover):not(:active) {
+    animation: matrixEffectReturn 0.5s forwards;
+  }
+  @keyframes matrixEffect {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(6px);
+    }
+  }
+  @keyframes matrixEffectReturn {
+    0% {
+      transform: translateX(6px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  /* Zdjęcia */
+  .small-image {
+    width: 15%;
+    height: 15%;
+  }
+  
+  /* Ramki kursów akcji */
+  div.nieWarto {
+    background-color: red;
+    color: yellow;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  div.warto {
+    background-color: limegreen;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  /* Stopka */
+  footer {
+    border-top: 2px solid limegreen;
+    float: right;
+    width: 75%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sell {
+    margin-right: 20px;
+  }
+  
+  .copyright {
+    text-align: center;
+    color: purple;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-grow: 1;
+  }
+  
+  .contact {
+    text-align: left;
+  }
+  

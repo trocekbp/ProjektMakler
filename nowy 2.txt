@@ -1,0 +1,6 @@
+1)Spolka kurs minimum kiedy kurs maksimum kiedy 
+
+2) uzytkownicy ktorzy najwiecej zarobili w ubiegłym roku
+
+3) ludzie ktorzy najwiecej stracili w tym roku w styczniu
+4) Zestawienie ktore pokaże według kategorii ile w kategorii bylo wykonanych transakcji 3 kwartał ubiegłego roku

@@ -1,0 +1,334 @@
+div.items p:target {display: block}
+    *{
+    box-sizing:border-box;
+    }
+  
+
+    
+  /* Style the header */
+  header {
+    background-color: black(48, 35, 228);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: lawngreen;
+    width: 75%;
+    float:right ;
+    border: 7px ridge limegreen;
+  }
+  
+
+  /* NAV */
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    position: fixed; /* Pozycjonowanie elementu na stałe */
+    top: 0; /* Umieszczenie elementu od góry strony */
+    left: 0; /* Umieszczenie elementu od lewej strony FAJNIE DZIAŁA*/ 
+    height: 100%; /* Rozciągnięcie elementu na całą wysokość strony */
+    float: left;
+    height: 100%;
+    width: 25%;
+    background: black;
+    padding: 20px;
+    color: whitesmoke;
+    border:8px double limegreen;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 2;
+  }
+  
+
+
+
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: black;
+    background-size: cover ;
+  }
+  
+  /* Style the footer */
+  /* footer {
+    clear: both;
+    background-color: rgb(228, 138, 35);
+    padding: 10px; /*Padding - poszerzenie 
+    text-align: center;
+    color: white;
+  } */
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+
+
+
+
+  /* Tabele */
+  table tr td:nth-child(2n+1) {
+    color: LIME;
+    font-family:"Courier New", monospace;
+    font-size:large;
+    font-weight: 500;
+  }
+  table,th,td{
+  border: 1px solid limegreen;
+  text-align: center;
+  }
+  table{
+    width: 100%;
+  }
+
+  th{
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    
+  }
+
+  /* Nazwa spolek w indexie */
+  a.nazwa:link, a.nazwa:visited{
+    background-color: black;
+    color: lime;
+    border: 2px solid lime;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  a.nazwa:hover{
+    background-color: blueviolet;
+    color: black;
+    border: 2px solid yellow;
+  }
+
+
+
+  /* przyciski sprzedaj */
+    /* Nazwa spolek w indexie */
+    a.sell:link, a.sell:visited{
+      color: yellow;
+      text-decoration: none;
+    }
+    a.sell:hover{
+      color: rgba(163, 163, 3, 0.562);
+      text-decoration:line-through;
+    }
+
+
+
+ /* po prostu link */
+a.d{ 
+  /* d od */
+  border: 2px solid limegreen;
+  border-radius: 20%;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: limegreen;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a.d:hover {
+  background-color: limegreen;
+  color: white;
+}
+
+
+
+/* przyciski od menu */
+    a.menu:link,
+    a.menu:visited,
+    a.menu {
+      background-color: lime;
+      color: black;
+      padding: 14px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+      position: relative;
+      overflow: hidden;
+      transition: color 0.3s, background-color 0.3s, transform 0.3s, border-color 0.3s;
+      font-family: 'Courier New', monospace;
+      border: 2px solid black; /* Add black border */
+    }
+    a.menu:hover,
+    a.menu:active {
+      background-color: black;
+      color: lime;
+      animation: matrixEffect 0.5s forwards;
+      border-color: lime; 
+    }
+
+    a.menu:not(:hover):not(:active) {
+      animation: matrixEffectReturn 0.5s forwards;
+    }
+
+    @keyframes matrixEffect {
+      0% {
+        transform: translateX(0px);
+      }
+      100% {
+        transform: translateX(6px);
+      }
+    }
+
+    @keyframes matrixEffectReturn {
+      0% {
+        transform: translateX(6px);
+      }
+      100% {
+        transform: translateX(0px);
+      }
+    }
+
+
+ /* przyciski od kategorii */
+    a.kat:link,
+    a.kat:visited,
+    a.kat {
+      background-color: lime;
+      color: black;
+      padding: 14px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+      position: relative;
+      overflow: hidden;
+      transition: color 0.3s, background-color 0.3s, transform 0.3s, border-color 0.3s;
+      font-family: 'Courier New', monospace;
+      border: 2px solid black; /* Add black border */
+    }                                                          
+    a.kat:hover,
+    a.kat:active {
+      background-color: black;
+      color: lime;
+      animation: matrixEffectKat 0.5s forwards;
+      border-color: lime; 
+    }
+
+    a.kat:not(:hover):not(:active) {
+      animation: matrixEffectReturnKat 0.5s forwards;
+    }
+
+    @keyframes matrixEffectKat {
+      0% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(-6px);
+      }
+    }
+
+    @keyframes matrixEffectReturnKat {
+      0% {
+        transform: translateY(-6px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  
+  /* INPUTY */
+  input{
+    background-color: black;
+    border: none;
+    border-bottom: 2px dotted lime;
+    color: yellow;
+    font-size: 16px;
+    padding: 5px;
+    width: 100px;
+  }
+/* BUTTONY */
+button{
+  background-color: grey;
+  color: white;
+  font-size: x-large;
+  padding: 7px;
+}
+
+                                                                    
+div.topBot{
+  border-top: 1px solid lime;
+  /* border-bottom: 1px solid lime; */
+  padding: 30px;
+}
+  .small-image {
+    width: 15%;
+    height: 15%;
+}
+
+p.konto{
+  font-weight: lighter;
+  font-size: x-large;
+  border: 3px dotted purple;
+  padding: 8px;
+}
+h2{
+  text-align: center;
+}
+
+
+body {
+  background-color: black;
+  color:whitesmoke;
+  font-family:'Courier New', monospace;
+  font-size: larger;
+}
+
+/* Ramki do kursów akcji */
+div.nieWarto{
+ background-color: red;
+ color: yellow;
+ margin-left: 20%;
+ margin-right: 20%;
+}
+div.warto{
+  background-color: limegreen;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.article-container {
+  padding: 20px;
+}
+
+footer {
+  border-top: 2px solid limegreen;
+  float: right;
+  width: 75%;
+  background-color: black;
+  padding: 20px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sell {
+  margin-right: 20px;
+}
+
+.copyright {
+  text-align: center;
+  color: purple;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact {
+  text-align: left;
+}
+article {
+  float: right;
+  padding: 20px;
+  width: 75%;
+  min-height: calc(100vh - 148px); /* Dostosuj wysokość artykułu */
+}
+
+
+  
+ 

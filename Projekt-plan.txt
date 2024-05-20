@@ -1,0 +1,12 @@
+Mobilny Makler
+1) Logowanie użytkowników  - admin zmienia symulację kursów, każdy użytkownik ma swój portfel (użytkowników się dodaje a admin jest już wcześniej w bazie danych taka różnica)
+2) Kursy akcji - (spróbować zapisywać stare kursy, wchodząć w szczegóły aktualnego wyświetla się lista poprzednich)
+3) Szczegóły spółek akcyjnych i recenzje na ich temat
+
+New Life:
+ToDo:
+DONE 1) transakcje posiadają zysk i podatek od tego zysku:
+2) raport z tranzakcji(zysk z kupna i zysk ze sprzedaży akcji)
+DONE 3) rozbudować użytkownika
+DONE 4) rozbudować wstawianie spółki
+5) dodać portfel użytkownika w akcjach i wolne środki
